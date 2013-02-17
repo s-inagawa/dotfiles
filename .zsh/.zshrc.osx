@@ -1,0 +1,16 @@
+### .zshrc.osx
+
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:$PATH
+
+export NODE_PATH=/usr/local/lib/node:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+
+## php
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
+## Alias
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias tmux='$HOME/bin/tmuxx'

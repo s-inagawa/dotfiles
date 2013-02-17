@@ -1,0 +1,9 @@
+### .zshrc.linux
+
+## Terminal Colorの設定
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+## vim
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'

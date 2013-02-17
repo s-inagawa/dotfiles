@@ -1,0 +1,11 @@
+*.swp
+*.diff
+.venv
+.rvmrc
+.~lock.*
+.svn
+.DS_Store
+.rbenv-gemsets
+.vim/bundle/*
+*.lock
+.zcompdump

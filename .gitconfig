@@ -1,0 +1,11 @@
+[user]
+    name = Kazuya Tateishi
+    email = kzy52m@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[core]
+    editor = /usr/local/bin/vim
+    excludesfile = ~/.gitignore

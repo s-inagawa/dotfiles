@@ -1,0 +1,131 @@
+snippet class
+  class ${1}
+    ${0}
+  end
+
+snippet def
+  def ${1}
+    ${0}
+  end
+
+snippet each
+  ${1:collection}.each do |${2:member}|
+    ${0}
+  end
+
+snippet if
+  if ${1:condition}
+    ${0}
+  end
+
+snippet ife
+  if ${1:condition}
+    ${2}
+  else
+    ${3}
+  end
+
+snippet elsif
+  elsif ${1:condition}
+    ${0}
+
+snippet unless
+  unless ${1:condition}
+    ${0}
+  end
+
+snippet while
+  while ${1:condition}
+    ${0}
+  end
+
+snippet until
+  until ${1:condition}
+    ${0}
+  end
+
+snippet case
+  case ${1}
+    when ${2}
+      ${3}
+  end
+
+snippet bef
+  before do
+    ${0}
+  end
+
+snippet it
+  it '${1}' do
+    ${0}
+  end
+
+snippet lam
+  lambda do
+    ${0}
+  end
+
+snippet encode
+  # -*- coding: utf-8 -*-
+
+snippet vp
+  validates :${1:column}, presence: true
+
+snippet vn
+  validates :${1:column}, numericality: true
+
+snippet vn2
+  validates :${1:column}, numericality: { allow_blank: true, only_integer: true }
+
+snippet vu
+  validates :${1:column}, uniqueness: true
+
+snippet vl
+  validates :${1:column}, length: { maximum: ${2:size} }
+
+snippet vl2
+  validates :${1:column}, length: { within: ${2:start}..${3:end} }
+
+snippet vi
+  validates :${1:column}, inclusion: { in: ${2:range} }
+
+snippet vf
+  validates :${1:column}, format: { with: ${2:format} }
+
+snippet desc
+  describe "${1:name}" do
+    ${2}
+  end
+alias desc describe
+
+snippet desccon
+  describe "${1:GET|POST|PUT|DELETE} ${2:/some/path}${3}" do
+    ${4}
+  end
+
+snippet con
+  context "${1}" do
+    ${2}
+  end
+alias con context
+
+snippet subjc
+  subject { ${1:FactoryGirl.create(:${2:name\})} }
+
+snippet subjb
+  subject { ${1:FactoryGirl.build(:${2:name\})} }
+
+snippet shbko
+  should be_a_kind_of(${1:class})
+
+snippet facb
+  FactoryGirl.build(:${1})
+
+snippet fac
+  FactoryGirl(:${1}, ${2})
+
+snippet facc
+  FactoryGirl.create(:${1})
+
+snippet facs
+  sequence(:${1}) {|n| "${2}#{n}"}
